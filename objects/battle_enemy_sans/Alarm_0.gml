@@ -1,0 +1,11 @@
+var inst = instance_create_depth(0,480,0,asgore_thinggy_send)
+inst.color_enabled=true
+inst.red=255
+inst.green=255
+inst.blue=255
+inst.redmax=255
+inst.greenmax=255
+inst.bluemax=255
+inst.redmin=255
+inst.greenmin=255
+inst.bluemin=255

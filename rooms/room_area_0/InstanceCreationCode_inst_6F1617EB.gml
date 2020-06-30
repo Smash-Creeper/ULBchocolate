@@ -1,0 +1,1 @@
+text="* The smell of this room...{sleep 24}&  fills you with determination..."
