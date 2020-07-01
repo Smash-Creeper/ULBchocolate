@@ -3615,14 +3615,6 @@
             }
         },
         {
-            "Key": "9b3479ec-0d19-44c6-abcb-4e49ef790184",
-            "Value": {
-                "id": "71a8fb17-0eb9-4318-a8bc-25d68c8c5b32",
-                "resourcePath": "objects\\battle_soul_red_zoom\\battle_soul_red_zoom.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "9b67c89c-5044-40d1-b66b-e7cf74677410",
             "Value": {
                 "id": "8634eb77-defa-44d9-b1ea-844670bc82de",
@@ -3796,6 +3788,14 @@
                 "id": "b25d046d-bace-42cf-a442-d9cea7a1928d",
                 "resourcePath": "scripts\\Console_SetStatusText\\Console_SetStatusText.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a1e10a39-0b67-4f1d-95f5-9ea2ffc89912",
+            "Value": {
+                "id": "578ba42c-61c0-48ef-9319-a321404db841",
+                "resourcePath": "objects\\battle_turn_9\\battle_turn_9.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4815,6 +4815,14 @@
             }
         },
         {
+            "Key": "cfe08c2b-f2ca-48bd-b95f-84e2c83eb9cb",
+            "Value": {
+                "id": "ffae3d2a-6429-4e29-917a-8ba55571cf03",
+                "resourcePath": "objects\\battle_turn_intro_triotale\\battle_turn_intro_triotale.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d0c07250-303c-4da4-8b76-b74bab12caea",
             "Value": {
                 "id": "c8c86fed-c10d-47c5-86ef-e21a8db1164b",
@@ -5524,14 +5532,6 @@
                 "id": "65299b1d-a24c-49da-ade8-bcb56730e708",
                 "resourcePath": "scripts\\Player_GetExp\\Player_GetExp.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "eda97d71-b310-43f8-96d1-107c32f0bdd7",
-            "Value": {
-                "id": "e1f3b6aa-d8f2-4053-a131-e0a329f8befa",
-                "resourcePath": "objects\\rawruwuX3awawawawaw\\rawruwuX3awawawawaw.yy",
-                "resourceType": "GMObject"
             }
         },
         {

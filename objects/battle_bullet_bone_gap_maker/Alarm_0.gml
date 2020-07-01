@@ -13,7 +13,7 @@ repeat(num){
 	
 	current_length_t=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6+offset_x,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
 	inst.dir=angle_t;
 	
 	inst.length=length;
@@ -39,7 +39,7 @@ repeat(num){
 	
 	current_length_b=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6+offset_x,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
 	inst.dir=angle_b;
 	inst.length=length;
 	inst.hspeed=sped
@@ -65,8 +65,8 @@ repeat(num){
 	
 	current_length_t=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
-	inst.dir=-90;
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6+offset_x,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=angle_t;
 	
 	inst.length=length;
 	inst.hspeed=sped
@@ -91,8 +91,8 @@ repeat(num){
 	
 	current_length_b=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
-	inst.dir=90;
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6+offset_x,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
+	inst.dir=angle_b;
 	inst.length=length;
 	inst.hspeed=sped
 	inst.type=type
@@ -122,8 +122,8 @@ repeat(num){
 	
 	current_length_t=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
-	inst.dir=-90;
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6+offset_x,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=angle_t;
 	
 	inst.length=length;
 	inst.hspeed=sped
@@ -152,8 +152,8 @@ repeat(num){
 	
 	current_length_b=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
-	inst.dir=90;
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6+offset_x,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
+	inst.dir=angle_b;
 	inst.length=length;
 	inst.hspeed=sped
 	inst.type=type
@@ -186,7 +186,7 @@ repeat(num){
 	
 	current_length_t=length
 	
-	var inst=instance_create_depth(battle_board.x-battle_board.left-space_x,(self.y-space_y/2-proc*space_y)+6,0,battle_bullet_bone);
+	var inst=instance_create_depth(battle_board.x-battle_board.left-space_x,(self.y-space_y/2-proc*space_y)+6+offset_y,0,battle_bullet_bone);
 	inst.dir=0;
 	
 	inst.length=length;
@@ -212,7 +212,7 @@ repeat(num){
 	
 	current_length_b=length
 	
-	var inst=instance_create_depth(battle_board.x+battle_board.right+space_x,(self.y-space_y/2-proc*space_y)+6,0,battle_bullet_bone);
+	var inst=instance_create_depth(battle_board.x+battle_board.right+space_x,(self.y-space_y/2-proc*space_y)+6+offset_y,0,battle_bullet_bone);
 	inst.dir=-180;
 	inst.length=length;
 	inst.vspeed=sped
@@ -238,7 +238,7 @@ repeat(num){
 	
 	current_length_t=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y-battle_board.up-space_y+offset_y,0,battle_bullet_bone);
 	inst.dir=-90;
 	
 	inst.length=length;
@@ -264,7 +264,7 @@ repeat(num){
 	
 	current_length_b=length
 	
-	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
+	var inst=instance_create_depth((self.x-space_x/2-proc*space_x)+6,battle_board.y+battle_board.down+space_y+offset_x,0,battle_bullet_bone);
 	inst.dir=90;
 	inst.length=length;
 	inst.vspeed=sped
@@ -295,7 +295,7 @@ repeat(num){
 	
 	current_length_t=length
 	
-	var inst=instance_create_depth(battle_board.x-battle_board.left-space_x,(self.y-space_y/2-proc*space_y)+6,0,battle_bullet_bone);
+	var inst=instance_create_depth(battle_board.x-battle_board.left-space_x,(self.y-space_y/2-proc*space_y)+6+offset_y,0,battle_bullet_bone);
 	inst.dir=0;
 	
 	inst.length=length;
@@ -325,7 +325,7 @@ repeat(num){
 	
 	current_length_b=length
 	
-	var inst=instance_create_depth(battle_board.x+battle_board.right+space_x,(self.y-space_y/2-proc*space_y)+6,0,battle_bullet_bone);
+	var inst=instance_create_depth(battle_board.x+battle_board.right+space_x,(self.y-space_y/2-proc*space_y)+6+offset_y,0,battle_bullet_bone);
 	inst.dir=-180;
 	inst.length=length;
 	inst.vspeed=sped

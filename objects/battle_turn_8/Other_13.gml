@@ -5,3 +5,4 @@
 event_inherited();
 time=0
 
+camera.angle=0

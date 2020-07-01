@@ -42,6 +42,9 @@ mood=1
 spacer_x=10
 spacer_y=10
 
+offset_x=10
+offset_y=10
+
 proc_t=0;
 proc_b=0;
 
