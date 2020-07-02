@@ -17,24 +17,24 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 	repeat(SPD*10){
 		if(dir==DIR.LEFT||dir==DIR.RIGHT){
 			if(Input_IsHeld(INPUT.UP)){
-				if(!position_meeting(x,y-sprite_height/2,block)){
+				if(!position_meeting(x,y-sprite_height/2,block)&&!position_meeting(x,y-sprite_height/2,battle_bullet_bone_box)){
 					y-=0.1;
 				}
 			}
 			if(Input_IsHeld(INPUT.DOWN)){
-				if(!position_meeting(x,y+sprite_height/2,block)){
+				if(!position_meeting(x,y+sprite_height/2,block)&&!position_meeting(x,y+sprite_height/2,battle_bullet_bone_box)){
 					y+=0.1;
 				}
 			}
 		}
 		if(dir==DIR.UP||dir==DIR.DOWN){
 			if(Input_IsHeld(INPUT.LEFT)){
-				if(!position_meeting(x-sprite_width/2,y,block)){
+				if(!position_meeting(x-sprite_width/2,y,block)&&!position_meeting(x-sprite_width/2,y,battle_bullet_bone_box)){
 					x-=0.1;
 				}
 			}
 			if(Input_IsHeld(INPUT.RIGHT)){
-				if(!position_meeting(x+sprite_width/2,y,block)){
+				if(!position_meeting(x+sprite_width/2,y,block)&&!position_meeting(x+sprite_width/2,y,battle_bullet_bone_box)){
 					x+=0.1;
 				}
 			}
@@ -55,6 +55,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 	}
 	var a=position_meeting(x+xx,y+yy,block);
 	var b=position_meeting(x+xx,y+yy,battle_platform);
+	var c=position_meeting(x+xx,y+yy,battle_bullet_bone_box);
 	var input=-1;
 	if(dir==DIR.DOWN){
 		input=INPUT.UP;
@@ -66,7 +67,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 		input=INPUT.LEFT;
 	}
 	
-	if ((a||b)&&move>=0){
+	if ((a||b||c)&&move>=0){
 		var fx=0;
 		var fy=0;
 		if(dir==DIR.DOWN){
@@ -78,7 +79,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 		}else if(dir==DIR.RIGHT){
 			fx=sprite_height/2;
 		}
-		while(position_meeting(x+fx,y+fy,block)||position_meeting(x+fx,y+fy,battle_platform)){
+		while(position_meeting(x+fx,y+fy,block)||position_meeting(x+fx,y+fy,battle_platform)||position_meeting(x+fx,y+fy,battle_bullet_bone_box)){
 			var mx=0;
 			var my=0;
 			if(dir==DIR.DOWN){
@@ -94,7 +95,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			y+=my;
 		}
 		
-		if(position_meeting(x+xx,y+yy,block)||position_meeting(x+xx,y+yy,battle_platform)){
+		if(position_meeting(x+xx,y+yy,block)||position_meeting(x+xx,y+yy,battle_platform)||position_meeting(x+xx,y+yy,battle_bullet_bone_box)){
 			move=0;
 			if(impact){
 				impact=false;

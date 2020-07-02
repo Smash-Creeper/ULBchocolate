@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "1fe94429-2089-416a-a07c-98d95c2b552a",
+            "Value": {
+                "id": "c38c6c88-cff1-4f4a-88ab-cfdd99a01d25",
+                "resourcePath": "sprites\\spr_battle_sans_face_eye\\spr_battle_sans_face_eye.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2006ef9d-8c42-4b5a-91c7-37f8dcd3ca0c",
             "Value": {
                 "id": "72b08a95-7826-4c5f-b88e-00ccb9678c38",
@@ -1780,6 +1788,14 @@
                 "id": "c820058f-cf6d-4e77-949b-5ce10d09f259",
                 "resourcePath": "scripts\\Battle_EndTurn\\Battle_EndTurn.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4a7a86e8-83aa-41fa-81a2-53d146916816",
+            "Value": {
+                "id": "807601ad-e979-48ac-856c-284fb0ffc93a",
+                "resourcePath": "sprites\\spr_bone_topi\\spr_bone_topi.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3327,6 +3343,14 @@
             }
         },
         {
+            "Key": "8e6690cb-c3b7-444f-b29c-168f0b1f2720",
+            "Value": {
+                "id": "7635539b-2ded-4c52-abb0-b484336422c9",
+                "resourcePath": "objects\\battle_bullet_bone_spin_maker\\battle_bullet_bone_spin_maker.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8e8bf4e7-09cf-4076-8606-be0bc9332c18",
             "Value": {
                 "id": "99fb8c8e-6917-4f1d-bb20-b991052fc392",
@@ -3815,6 +3839,14 @@
             }
         },
         {
+            "Key": "a3ff7236-7591-4f13-8404-621f0b7ee1c3",
+            "Value": {
+                "id": "5e806796-ed03-4d70-8e2d-62475274b21a",
+                "resourcePath": "sounds\\snd_impact\\snd_impact.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a470f831-3c7e-4f0a-b776-fd1bb02833bd",
             "Value": {
                 "id": "b48a32a0-2688-4d6f-9def-41a7492970b7",
@@ -3860,6 +3892,14 @@
                 "id": "99625663-e87e-45c9-b98b-fe94c5c119e4",
                 "resourcePath": "views\\a5cbb91f-b47b-46fd-912e-5f0af55779b1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a69cda51-e6ca-4df7-9acd-3b691e0b3aaf",
+            "Value": {
+                "id": "6794cf8f-0d08-4c40-a016-1f59f996712b",
+                "resourcePath": "objects\\battle_turn_10_hard\\battle_turn_10_hard.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4535,6 +4575,14 @@
             }
         },
         {
+            "Key": "c52e790d-cb14-45be-ac80-a06638b938a2",
+            "Value": {
+                "id": "8678d74b-0061-44d7-b7e3-ea1875e7e1ca",
+                "resourcePath": "scripts\\Battle_StopBoardTransforming\\Battle_StopBoardTransforming.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c5364498-6e26-401a-9fd6-592bf2a65fa3",
             "Value": {
                 "id": "82fee541-5a2c-4ed5-be00-7a08ea5cb4cc",
@@ -4900,6 +4948,14 @@
                 "id": "90c3c644-04e8-4346-af63-d1ac797466f3",
                 "resourcePath": "scripts\\BGM_IsPlaying\\BGM_IsPlaying.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d2ba8f83-ccac-4363-a7dd-276f220cac34",
+            "Value": {
+                "id": "c65f1f1f-0046-4f10-b2eb-834c1e605edf",
+                "resourcePath": "objects\\battle_turn_10\\battle_turn_10.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6001,6 +6057,7 @@
         "f6a989eb-6a0f-42b1-b2cd-1de21765dedd",
         "d23e18eb-251c-4042-b555-2a9a27a67481",
         "9846ec9c-25d9-4019-9c7f-a6258aff4f70",
+        "c52e790d-cb14-45be-ac80-a06638b938a2",
         "8bf37910-8bc0-4129-b691-4a7c1027b832",
         "e9760b16-71a5-4bdb-b06a-f583c895fa06",
         "815a349e-bb7c-4f2f-8e4b-15af437ec5d0",

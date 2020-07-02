@@ -1,0 +1,9 @@
+start = 0
+t=0
+b=battle_board.x-battle_board.left-100
+d=battle_board.x+battle_board.right+100
+m=1
+f=2
+k=battle_board.y
+time = -10
+_dir=DIR.UP;

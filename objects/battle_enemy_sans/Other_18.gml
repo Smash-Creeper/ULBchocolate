@@ -16,11 +16,11 @@ instance_create_depth(0,0,0,battle_turn_9);
 }else if(turn=1){
 inst.text="N.";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_6);
+instance_create_depth(0,0,0,battle_turn_10);
 }else if(turn=2){
 inst.text="N.";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_7);
+instance_create_depth(0,0,0,battle_turn_10_hard);
 }
 break;
 

@@ -8,6 +8,7 @@ if(Battle_IsSoulValid(SOUL)&&object_exists(SOUL)){
 		X=battle_soul.x;
 		Y=battle_soul.y;
 		instance_destroy(battle_soul);
+	//	face_battle_sans.emotion=0
 	}
 	instance_create_depth(X,Y,DEPTH_BATTLE.SOUL,SOUL);
 	return true;
