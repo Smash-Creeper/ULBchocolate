@@ -51,12 +51,15 @@ switch(string_lower(_naming_name)){
 		text=Lang_GetString("menu.confirm.title.chara");
 		break;
 	case "kyo":
-	case "lom":
-	case "loloof":
 	case "jevilh":
 	case "sidoka":
 	case "joshie":
 		text="Pog :D";
+		break;
+	case "lom":
+	case "loloof":
+		text="Pog :D";
+		global.lom=true
 		break;
 	case "zerjox":
 	case "zer":

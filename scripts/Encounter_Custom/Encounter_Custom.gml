@@ -7,4 +7,4 @@ Encounter_Set(1,-1,battle_enemy_simple,-1,"* You encountered the test&  monster!
 Encounter_Set(2,-1,battle_enemy_gb,-1,"* Gaster Blaster example.",-1);
 
 //Sans
-Encounter_Set(3,-1,battle_enemy_sans,-1,"* Its Ness.",bgm_placeholder_song);
+Encounter_Set(3,-1,battle_enemy_sans,-1,"* Its Ness.",-1);

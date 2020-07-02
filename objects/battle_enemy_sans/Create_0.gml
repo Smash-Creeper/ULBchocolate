@@ -11,3 +11,8 @@ animation=true
 instance_create_depth(x-29,y-125,0,face_battle_sans)
 instance_create_depth(x+2.5,y-75,0,face_battle_sans_body)
 instance_create_depth(x+2.5,y-0,0,face_battle_sans_legs)
+if(global.lom=true){
+	audio_play_sound(BGM_LOM_Meg,-99,true)
+}else{
+audio_play_sound(bgm_placeholder_song,-99,true)
+}
