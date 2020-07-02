@@ -50,6 +50,21 @@ switch(string_lower(_naming_name)){
 	case "chara":
 		text=Lang_GetString("menu.confirm.title.chara");
 		break;
+	case "kyo":
+	case "lom":
+	case "loloof":
+	case "jevilh":
+	case "sidoka":
+	case "joshie":
+		text="Pog :D";
+		break;
+	case "zerjox":
+	case "zer":
+	case "jox":
+		text="Fuck off";
+		show_message("Fuck off and Fuck you");
+        game_end()
+        break;
 }
 
 _confirm_title=text;
