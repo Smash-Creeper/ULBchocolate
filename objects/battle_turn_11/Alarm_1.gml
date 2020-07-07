@@ -1,0 +1,13 @@
+if(m=1){
+b-=5
+}
+if(m=2){
+b=battle_board.x
+}
+if(f=1){
+d=battle_board.x
+}
+if(f=2){
+d-=5
+}
+alarm[1]=1

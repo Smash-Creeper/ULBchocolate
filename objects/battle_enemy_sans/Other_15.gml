@@ -5,10 +5,17 @@ switch(Battle_GetMenuChoiceButton()){
 		//Check: is enemy supposed to be dead?
 		if(_hp<=0){
 			//Create particle effect
+			
+			instance_destroy(face_battle_sans);
+			instance_destroy(face_battle_sans_body);
+			instance_destroy(face_battle_sans_legs);
 			var inst=instance_create_depth(x,y,0,battle_death_particle);
 			inst.sprite=sprite_index;
-			audio_play_sound(snd_vaporize,0,false);
+			inst.scale_x=2
+			inst.scale_y=2
 			instance_destroy();
+
+			audio_play_sound(snd_vaporize,0,false);
 		}
 		break;
 		

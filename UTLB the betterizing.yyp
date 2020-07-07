@@ -130,7 +130,7 @@
             "Key": "03b1381f-72e2-4643-a695-0974c3acbba1",
             "Value": {
                 "id": "6a39eb11-2efd-4bbf-980f-0184ac2404f7",
-                "resourcePath": "objects\\battle_turn_7\\battle_turn_7.yy",
+                "resourcePath": "objects\\battle_turn_7_triotale\\battle_turn_7_triotale.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2890,7 +2890,7 @@
             "Key": "762a8c2e-79fa-49d2-8021-2e148da9f687",
             "Value": {
                 "id": "b46d386c-d82f-4293-a8d2-237f9855548a",
-                "resourcePath": "objects\\battle_turn_8\\battle_turn_8.yy",
+                "resourcePath": "objects\\battle_turn_8_unusedtest\\battle_turn_8_unusedtest.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -4063,6 +4063,14 @@
             }
         },
         {
+            "Key": "a66c2764-8a00-46bb-a630-5df6994389a7",
+            "Value": {
+                "id": "d7b11de7-934e-4225-a0ae-c71e10a070d2",
+                "resourcePath": "objects\\battle_turn_11\\battle_turn_11.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a69cda51-e6ca-4df7-9acd-3b691e0b3aaf",
             "Value": {
                 "id": "6794cf8f-0d08-4c40-a016-1f59f996712b",
@@ -4164,6 +4172,14 @@
                 "id": "e91a3321-a588-41ed-967b-5828686f9494",
                 "resourcePath": "scripts\\Encounter_GetBGM\\Encounter_GetBGM.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aa5f5c09-a692-4ef7-8fef-20cea477eb9f",
+            "Value": {
+                "id": "668180cb-8a3a-4699-810d-50cbf390044d",
+                "resourcePath": "objects\\battle_turn_intro\\battle_turn_intro.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4434,7 +4450,7 @@
             "Key": "b7a6a123-051f-4c1a-b349-739b5c7a0aee",
             "Value": {
                 "id": "f85f1e47-a64b-43a6-afbf-a487b0b3c97a",
-                "resourcePath": "objects\\battle_turn_6\\battle_turn_6.yy",
+                "resourcePath": "objects\\battle_turn_6_triotale\\battle_turn_6_triotale.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -5602,7 +5618,7 @@
             "Key": "e646d61a-d86d-40c9-a763-09d0ab589b76",
             "Value": {
                 "id": "a111d2e4-b71c-4461-ba09-9f6257c9c8d6",
-                "resourcePath": "objects\\battle_turn_5\\battle_turn_5.yy",
+                "resourcePath": "objects\\battle_turn_2\\battle_turn_2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -5644,6 +5660,14 @@
                 "id": "17ad22c1-d7f3-450d-9c8c-2b2d5bf54e15",
                 "resourcePath": "sprites\\spr_bg_area_1\\spr_bg_area_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e8a106d7-c120-4010-932a-81e9847e756b",
+            "Value": {
+                "id": "34cf3508-9aae-4b9c-b503-4bd31e3d926d",
+                "resourcePath": "objects\\battle_dialog_enemy_inturn\\battle_dialog_enemy_inturn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6119,6 +6143,14 @@
             }
         },
         {
+            "Key": "f90cb67b-75ad-417c-be6f-d335549ab7f1",
+            "Value": {
+                "id": "38ddcb94-fff1-4612-b41b-f39c3ef43420",
+                "resourcePath": "sprites\\sprite87\\sprite87.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f9277ef1-fb66-45e2-958b-04ede8518c19",
             "Value": {
                 "id": "98203081-2eec-4cd4-9f21-1ec104a772a5",
@@ -6132,6 +6164,14 @@
                 "id": "dc0e595c-865a-4a8a-84dd-b7829e9f0b49",
                 "resourcePath": "objects\\trigger_warp\\trigger_warp.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fa3100b6-cbc2-424b-a068-6534a3807697",
+            "Value": {
+                "id": "75619a8f-8d30-480a-a4a4-07b3bf00cd36",
+                "resourcePath": "fonts\\font_sans\\font_sans.yy",
+                "resourceType": "GMFont"
             }
         },
         {
