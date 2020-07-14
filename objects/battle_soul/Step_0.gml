@@ -32,3 +32,16 @@ if(_inv>0){
 		image_index=0;
 	}
 }
+
+if(_inv>0){
+	_inv-=1;
+	if(image_speed==0){
+		image_speed=1/2;
+		image_index=1;
+	}
+}else{
+	if(image_speed!=0){
+		image_speed=0;
+		image_index=0;
+	}
+}

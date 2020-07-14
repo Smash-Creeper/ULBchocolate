@@ -20,12 +20,28 @@ instance_create_depth(0,0,0,battle_turn_2);
 }else if(turn=2){
 inst.text="N.";
 inst.template=0;
+instance_create_depth(0,0,0,battle_turn_3);
+}else if(turn=3){
+inst.text="N.";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_4);
+}else if(turn=4){
+inst.text="N.";
+inst.template=0;
 instance_create_depth(0,0,0,battle_turn_10_hard);
+}else if(turn=5){
+inst.text="N.";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_fightbuttsteal);
+}else if(turn=6){
+inst.text="N.";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_special);
 }
 break;
 
 		case BATTLE_MENU_CHOICE_BUTTON.ITEM:
-		
+		instance_create_depth(0,0,0,battle_turn_gb_spam_1);
 		break;
 		
 		case BATTLE_MENU_CHOICE_BUTTON.ACT:
@@ -34,8 +50,22 @@ break;
 		var inst=instance_create_depth(x+100,y-150,0,battle_dialog_enemy);
 inst.text="{face_link 1}{face_emotion 3}Minecraft Good";
 inst.template=0;
+instance_create_depth(0,0,0,battle_turn_gb_spam_1);
 		break;
 }
+break;
+
+
+		case BATTLE_MENU_CHOICE_BUTTON.MERCY:
+		//switch(Battle_GetMenuChoiceAction()){
+		//	case 1:
+		var inst=instance_create_depth(x+100,y-150,0,battle_dialog_enemy);
+inst.text="Fack u";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_empty);
+
+		//break;
+//}
 break;
 	}
 }

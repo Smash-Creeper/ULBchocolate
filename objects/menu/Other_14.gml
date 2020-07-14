@@ -54,12 +54,20 @@ switch(string_lower(_naming_name)){
 	case "jevilh":
 	case "sidoka":
 	case "joshie":
+	case "bob":
+	case "dad":
+	case "daddy":
 		text="Pog :D";
 		break;
 	case "lom":
 	case "loloof":
 		text="Pog :D";
 		global.lom=true
+		break;
+	case "sens":
+	case "sensat":
+		text="oh boy,&are YOU in for a&{color `red`}TREAT!";
+		global.SENS=true
 		break;
 	case "zerjox":
 	case "zer":

@@ -5,8 +5,10 @@ Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check");
 Battle_SetEnemyActionName(_enemy_slot,1,"* Fortnite");
 
-Battle_SetEnemyDEF(_enemy_slot,-15);
-
-_hp_max=100;
-_hp=100;
+Battle_SetEnemyDEF(_enemy_slot,1);
+Battle_SetFleeable(false)
+/*Battle_SetMenuMercyFleeEnabled(false)
+Battle_SetEnemySpareable(_enemy_slot,true)*/
+_hp_max=2;
+_hp=2;
 

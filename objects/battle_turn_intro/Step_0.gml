@@ -76,10 +76,77 @@ repeat(num){
 	alarm[2]=61
 	}
 	
-    if (time == 60*2)
+    if (time == 105)
     {
 
-			aaaaa = instance_create_depth(battle_board.x-battle_board.left-100+18,y,0,battle_bullet_bone_gap_maker)
+
+	
+	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
+inst.x_target=battle_board.x-battle_board.left-50-inst.sprite_width/2;
+inst.y_target=battle_board.y-battle_board.up-50-inst.sprite_height/2 ;
+inst.angle_start=-45;
+inst.angle_target=-45;
+inst.type=0;
+inst.scale_y=1.75;
+inst.scale_x=1.75;
+inst.time_beam_end_delay=69;
+inst.time_release_delay=10;
+	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
+inst.x_target=battle_board.x+battle_board.right+50+inst.sprite_width/2;
+inst.y_target=battle_board.y-battle_board.up-50-inst.sprite_height/2 ;
+inst.angle_start=-45-90;
+inst.angle_target=-45-90;
+inst.type=0;
+inst.scale_y=1.75;
+inst.scale_x=1.75;
+inst.time_beam_end_delay=69;
+inst.time_release_delay=10;
+	
+	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
+inst.x_target=battle_board.x+battle_board.right+50+inst.sprite_width/2;
+inst.y_target=battle_board.y+battle_board.down+50+inst.sprite_height/2;
+inst.angle_start=180-45;
+inst.angle_target=180-45;
+inst.type=0;
+inst.scale_y=1.75;
+inst.scale_x=1.75;
+inst.time_beam_end_delay=69;
+inst.time_release_delay=10;
+	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
+inst.x_target=battle_board.x-battle_board.left-50-inst.sprite_height/2;
+inst.y_target=battle_board.y+battle_board.down+50+inst.sprite_width/2;
+inst.angle_start=45;
+inst.angle_target=45;
+inst.type=0;
+inst.scale_y=1.75;
+inst.scale_x=1.75;
+inst.time_beam_end_delay=69;
+inst.time_release_delay=10;
+
+	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
+inst.x_target=battle_board.x+battle_board.right;
+inst.y_target=battle_board.y-battle_board.up-100;
+inst.angle_start=-90;
+inst.angle_target=-90;
+inst.type=0;
+inst.scale_y=1;
+inst.scale_x=2;
+inst.time_beam_end_delay=69;
+inst.time_release_delay=10;
+	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
+inst.x_target=battle_board.x-battle_board.left;
+inst.y_target=battle_board.y+battle_board.down+100
+inst.angle_start=90;
+inst.angle_target=90;
+inst.type=0;
+inst.scale_y=1;
+inst.scale_x=2;
+inst.time_beam_end_delay=69;
+inst.time_release_delay=10;
+	}
+	
+	if(time == 130){
+				aaaaa = instance_create_depth(battle_board.x-battle_board.left-200+18,y,0,battle_bullet_bone_gap_maker)
 aaaaa.way=1
 aaaaa.length_t=100
 aaaaa.length_b=5
@@ -93,28 +160,7 @@ aaaaa.loop_amount=25
 aaaaa.spacer_x=10
 aaaaa.frequancy=4
 aaaaa.in=false
-aaaaa.toggle=1
-	
-	var inst=instance_create_depth(battle_board.x,0,0,battle_bullet_gb);
-inst.x_target=battle_board.x;
-inst.y_target=battle_board.y-battle_board.up-100;
-inst.angle_start=-90;
-inst.angle_target=-90;
-inst.type=0;
-inst.scale_y=2;
-inst.scale_x=2;
-inst.time_beam_end_delay=69;
-inst.time_release_delay=10;
-	var inst=instance_create_depth(battle_board.x,480,0,battle_bullet_gb);
-inst.x_target=battle_board.x;
-inst.y_target=battle_board.y+battle_board.down+100;
-inst.angle_start=90;
-inst.angle_target=90;
-inst.type=0;
-inst.scale_y=2;
-inst.scale_x=2;
-inst.time_beam_end_delay=69;
-inst.time_release_delay=10;
+aaaaa.toggle=1	
 	}
 	
     if (time == 60*7)
@@ -439,7 +485,7 @@ inst.y_target=battle_board.y+inst.sprite_height/3;
 inst.angle_start=0;
 inst.angle_target=0;
 inst.type=0;
-inst.scale_y=2;
+inst.scale_y=1;
 inst.scale_x=2;
 inst.time_beam_end_delay=69*2;
 inst.time_release_delay=10;
@@ -450,7 +496,7 @@ inst.y_target=battle_board.y+inst.sprite_height/3;
 inst.angle_start=180;
 inst.angle_target=180;
 inst.type=0;
-inst.scale_y=2;
+inst.scale_y=1;
 inst.scale_x=2;
 inst.time_beam_end_delay=69*2;
 inst.time_release_delay=10;
@@ -461,7 +507,7 @@ inst.y_target=battle_board.y-battle_board.up-100;
 inst.angle_start=-90;
 inst.angle_target=-90;
 inst.type=0;
-inst.scale_y=1;
+inst.scale_y=2;
 inst.scale_x=2;
 inst.time_beam_end_delay=69;
 inst.time_release_delay=10;
@@ -471,7 +517,7 @@ inst.y_target=battle_board.y+battle_board.down+100;
 inst.angle_start=90;
 inst.angle_target=90;
 inst.type=0;
-inst.scale_y=1;
+inst.scale_y=2;
 inst.scale_x=2;
 inst.time_beam_end_delay=69;
 inst.time_release_delay=10;
@@ -480,7 +526,7 @@ inst.time_release_delay=10;
 	
 	if(time==60*15){
 		var inst=instance_create_depth(battle_enemy.x+100,battle_enemy.y-150,0,battle_dialog_enemy);
-inst.text="{font 3}{face_link 1}{face_emotion 3}*insert {face_emotion 11}egdey{face_emotion 3} dialog&here*";
+inst.text="{font 3}{face_link 1}{face_emotion 3}*insert {face_emotion 5}egdey{face_emotion 3} dialog&here*";
 inst.template=0;
 t_end=true
 }
