@@ -11,4 +11,11 @@ turn++
 break;
 	}
 }
+
+if(phase=1){
 face_battle_sans.emotion=0
+face_battle_sans_LOM.emotion=0
+}else if(phase=2){
+face_battle_sans.emotion=12
+face_battle_sans_LOM.emotion=12
+}

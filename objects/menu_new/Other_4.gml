@@ -1,0 +1,1 @@
+BGM_Play(0, bgm_menu_v1, true);

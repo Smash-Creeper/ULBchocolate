@@ -7,6 +7,7 @@ Battle_SetEnemyActionName(_enemy_slot,1,"* Fortnite");
 
 Battle_SetEnemyDEF(_enemy_slot,1);
 Battle_SetFleeable(false)
+Battle_SetMenuMercyFleeEnabled(false)
 /*Battle_SetMenuMercyFleeEnabled(false)
 Battle_SetEnemySpareable(_enemy_slot,true)*/
 _hp_max=2;

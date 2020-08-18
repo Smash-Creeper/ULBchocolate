@@ -7,5 +7,5 @@ event_inherited();
 Battle_SetNextState(BATTLE_STATE.TURN_PREPARATION);
 
 if(debug_mode){
-	turn=0
+	//turn=0
 }

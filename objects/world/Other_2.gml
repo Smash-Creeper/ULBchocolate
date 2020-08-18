@@ -1,3 +1,5 @@
+global.hardmode=false
+
 Anim_Init();
 
 Console_Init();
@@ -50,8 +52,9 @@ Console_OutputLine("Game Name: "+GAME_NAME);
 Console_OutputLine("Game Author: "+GAME_AUTHOR);
 Console_OutputLine("Game Version: "+GAME_VERSION);
 Console_OutputLine(" ");
-Console_OutputLine("Have fun debugging the game, you dirty hacker!");
+Console_OutputLine("Hello there Gamer");
 
 //show_debug_overlay(true);
 
 room_goto_next();
+

@@ -1,11 +1,11 @@
 siner = 0
-depth = -100
+depth = -101
 image_xscale = 640
 image_yscale = 0.5
 
 done=false
 
-scaletext=true
+scaletext=false 
 
 red=0
 green=0

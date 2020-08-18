@@ -9,11 +9,13 @@ _talking_previous=false;
 image_xscale=2;
 image_yscale=2;
 
+spri=spr_battle_sans_legs
+
 //Custom
-idle_sprite[0]=spr_battle_sans_legs;
+idle_sprite[0]=spri;
 idle_image[0]=0;
 idle_speed[0]=0;
-talk_sprite[0]=spr_battle_sans_legs;
+talk_sprite[0]=spri;
 talk_image[0]=0;
 talk_speed[0]=0;
 /*

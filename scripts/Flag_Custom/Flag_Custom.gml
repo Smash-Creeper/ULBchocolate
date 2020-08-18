@@ -1,7 +1,14 @@
+if(global.hardmode=false){
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.NAME,"CHARA");
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.LV,20);
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX,99);
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.HP,99);
+}else if(global.hardmode=true){
+Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.NAME,"Frisk");
+Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.LV,1);
+Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX,20);
+Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.HP,20);
+}
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM,-1);
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+1,-1);
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+2,-1);
@@ -26,4 +33,8 @@ Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,-1);
 Item_SetWeapon(item_stick);
 Item_SetArmor(item_bandage);
 Item_Add(item_pie);
+Item_Add(item_hero);
+Item_Add(item_hero);
+Item_Add(item_hero);
+Item_Add(item_hero);
 Item_Add(item_tml);

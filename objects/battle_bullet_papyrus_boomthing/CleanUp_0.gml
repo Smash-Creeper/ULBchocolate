@@ -1,0 +1,24 @@
+if(instance_exists(_inst1)){
+	instance_destroy(_inst1);
+}
+if(instance_exists(_inst2)){
+	instance_destroy(_inst2);
+}
+if(instance_exists(_inst3)){
+	instance_destroy(_inst3);
+}
+if(instance_exists(_inst4)){
+	instance_destroy(_inst4);
+}
+if(instance_exists(_inst5)){
+	instance_destroy(_inst5);
+}
+if(instance_exists(_inst6)){
+	instance_destroy(_inst6);
+}
+if(instance_exists(_inst7)){
+	instance_destroy(_inst7);
+}
+if(instance_exists(_inst8)){
+	instance_destroy(_inst8);
+}

@@ -560,4 +560,20 @@ switch(cmd[|0]){
 			_skip_space=cmd[|1];
 		}
 		break;
+		
+		
+	case "hurt":
+		if(is_real(cmd[|1])){
+			var h = cmd[|1];
+			Player_Hurt(h)
+		}
+		break;
+		
+	case "heal":
+		if(is_real(cmd[|1])){
+			var h = cmd[|1];
+			Player_Heal(h)
+		}
+		break;
+		
 }
