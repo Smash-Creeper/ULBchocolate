@@ -52,7 +52,7 @@ if(shake_y>0){
 }
 
 
-if(!instance_exists(target)){
+if(!instance_exists(target)||_no_target=1){
 	camera_set_view_target(_camera,noone);
 	camera_set_view_pos(_camera,x+_shake_pos_x,y+_shake_pos_y);
 }else{

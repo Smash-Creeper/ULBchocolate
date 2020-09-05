@@ -1,8 +1,12 @@
 {
-    "id": "0dcead03-b69a-4469-bcf1-37ccee1c0a6f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "ReadMe",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "ReadMe",
+  "tags": [],
+  "resourceType": "GMScript",
 }

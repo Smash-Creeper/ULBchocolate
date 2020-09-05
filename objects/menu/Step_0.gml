@@ -46,7 +46,8 @@ if(_menu==0){
 				if(room_exists(target)){
 					room_goto(target);
 				}else{
-					show_message("ERROR:\nAttempt to goto an unexisting room "+string(target));
+					show_message("ERROR:\nAttempt to goto an unexisting room "+string(target)+"\nSending to dogcheck");
+					room_goto(room_menu_new);
 				}
 			}else if(_choice==1){
 				_menu=2;

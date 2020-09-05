@@ -1,5 +1,11 @@
 global.hardmode=false
 
+global.harddemo=false
+
+global.deathcounter=0
+
+global.phase1demo=false
+
 Anim_Init();
 
 Console_Init();
@@ -55,6 +61,3 @@ Console_OutputLine(" ");
 Console_OutputLine("Hello there Gamer");
 
 //show_debug_overlay(true);
-
-room_goto_next();
-

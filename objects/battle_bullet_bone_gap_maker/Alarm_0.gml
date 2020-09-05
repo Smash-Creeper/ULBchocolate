@@ -1,3 +1,4 @@
+rng = round(random_range(random_l[0],random_l[1]))
 if(way=h){
 	if(reverse=false){
 		if(toggle=1){
@@ -5,7 +6,7 @@ if(way=h){
 var num=number_t;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_t+(proc_t*change_t)+12;
+	var length=length_t+(proc_t*change_t)+12-rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -31,7 +32,7 @@ repeat(num){
 var num=number_b;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_b+(proc_b*change_b)+12;
+	var length=length_b+(proc_b*change_b)+12+rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -57,7 +58,7 @@ repeat(num){
 var num=number_t;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_t+(proc*change_t)+12;
+	var length=length_t+(proc*change_t)+12-rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -83,7 +84,7 @@ repeat(num){
 var num=number_b;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_b+(proc*change_b)+12;
+	var length=length_b+(proc*change_b)+12+rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -111,9 +112,9 @@ var num=number_t*2;
 repeat(num){
 	var space_x=spacer_x;
 	if(proc_t<=number_t){
-	var length=length_t+(proc_t*change_t)+12;
+	var length=length_t+(proc_t*change_t)+12-rng;
 	}else if(proc_t>number_t){
-	var length=length_t+(-proc_t*change_t)+12;	
+	var length=length_t+(-proc_t*change_t)+12-rng;	
 	}
 	var timep=come_speed;
 	var delay=1;
@@ -141,9 +142,9 @@ var num=number_b*2;
 repeat(num){
 	var space_x=spacer_x;
 	if(proc_b<=number_b){
-	var length=length_b+(proc_b*change_b)+12;
+	var length=length_b+(proc_b*change_b)+12+rng;
 	}else if(proc_b>number_b){
-	var length=length_b+(-proc_b*change_b)+12;	
+	var length=length_b+(-proc_b*change_b)+12+rng;	
 	}
 	var timep=come_speed;
 	var delay=1;
@@ -178,7 +179,7 @@ repeat(num){
 var num=number_t;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_t+(proc_t*change_t)+12;
+	var length=length_t+(proc_t*change_t)+12-rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -204,7 +205,7 @@ repeat(num){
 var num=number_b;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_b+(proc_b*change_b)+12;
+	var length=length_b+(proc_b*change_b)+12+rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -230,7 +231,7 @@ repeat(num){
 var num=number_t;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_t+(proc*change_t)+12;
+	var length=length_t+(proc*change_t)+12-rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -256,7 +257,7 @@ repeat(num){
 var num=number_b;
 repeat(num){
 	var space_x=spacer_x;
-	var length=length_b+(proc*change_b)+12;
+	var length=length_b+(proc*change_b)+12+rng;
 	var timep=come_speed;
 	var delay=1;
 	var space_y=spacer_y;
@@ -284,9 +285,9 @@ var num=number_t*2;
 repeat(num){
 	var space_x=spacer_x;
 	if(proc_t<=number_t){
-	var length=length_t+(proc_t*change_t)+12;
+	var length=length_t+(proc_t*change_t)+12-rng;
 	}else if(proc_t>number_t){
-	var length=length_t+(-proc_t*change_t)+12;	
+	var length=length_t+(-proc_t*change_t)+12-rng;	
 	}
 	var timep=come_speed;
 	var delay=1;
@@ -314,9 +315,9 @@ var num=number_b*2;
 repeat(num){
 	var space_x=spacer_x;
 	if(proc_b<=number_b){
-	var length=length_b+(proc_b*change_b)+12;
+	var length=length_b+(proc_b*change_b)+12+rng;
 	}else if(proc_b>number_b){
-	var length=length_b+(-proc_b*change_b)+12;	
+	var length=length_b+(-proc_b*change_b)+12+rng;	
 	}
 	var timep=come_speed;
 	var delay=1;

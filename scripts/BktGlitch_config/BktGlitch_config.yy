@@ -1,8 +1,12 @@
 {
-    "id": "2db18c9a-2a1b-4663-aec9-ca16fce62963",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "BktGlitch_config",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "BktGlitch",
+    "path": "folders/Scripts/BktGlitch.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "BktGlitch_config",
+  "tags": [],
+  "resourceType": "GMScript",
 }

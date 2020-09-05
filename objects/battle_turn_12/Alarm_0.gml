@@ -1,0 +1,1 @@
+Anim_Create(battle_bullet_bone,"length",ANIM_TWEEN.LINEAR,ANIM_EASE.OUT,battle_bullet_bone.length,10,5)

@@ -11,6 +11,7 @@ _inst_phase1=noone;
 _inst_phase2=noone;
 _inst_phase3=noone;
 _inst_phase4=noone;
+_inst_hell=noone;
 _inst_name=noone;
 _inst_lv=noone;
 _inst_time=noone;
@@ -50,6 +51,9 @@ _change_inst=noone;
 _change_color=c_white;
 _change_id=-1;
 
-//global.hardmode=false
+secret=0;
 
+//global.hardmode=false
 event_user(0);
+
+instance_create_depth(0,0,0,ut_save_loader)

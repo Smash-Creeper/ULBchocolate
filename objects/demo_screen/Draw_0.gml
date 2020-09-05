@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_demoend_screen_phase,spr,x,y,1,1,0,c_white,1)

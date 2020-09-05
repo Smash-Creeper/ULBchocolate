@@ -45,6 +45,10 @@ switch(string_lower(_naming_name)){
 		text=Lang_GetString("menu.confirm.title.undyne");
 		valid=false;
 		break;
+	case "murian":
+		text="Glad you condone this&{color `yellow`}S H I T";
+		//valid=false;
+		break;
 	case "mtt":
 	case "metta":
 	case "mett":
@@ -80,6 +84,8 @@ switch(string_lower(_naming_name)){
         game_end()
         break;
 	case "frisk":
+	//case "hard":
+	case "a":
 		text="Warning this will make&your life {color `red`}&Hell.";
 		global.hardmode=true
         break;

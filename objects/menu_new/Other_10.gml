@@ -1,46 +1,21 @@
 ///@desc Menu Switch
 if(_menu==0){
-	_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO));
-	if(_mode==0){
 	//	_inst_instruction=instance_create_depth(170,40,0,text_typer);
 	//	_inst_instruction.text=_prefix+"{color_text `gray_light`} --- Instruction ---{space_y -1}&&{space_y 2}[Z or ENTER] - Confirm&[X or SHIFT] - Cancel&[C or CTRL] - Menu (In-game)&[F4] - Fullscreen&[Hold ESC] - Quit&When HP is 0, you lose.";
-		_inst_begin=instance_create_depth(170,120,0,text_typer);
-		_inst_begin.text=_prefix+"Begin Battle";
-		_inst_settings=instance_create_depth(170,150,0,text_typer);
-		_inst_settings.text=_prefix+"Settings(Broken)";
-		_inst_changeurname=instance_create_depth(170,180,0,text_typer);
-		_inst_changeurname.text=_prefix+"Change Name";
-		_inst_hardmode=instance_create_depth(170,210,0,text_typer);
-		_inst_hardmode.text=_prefix+"Hardmode:Off";
-		with(text_typer){
-			event_user(15);
-		}
-		event_user(2);
-	}else{
-		Flag_Load(FLAG_TYPE.INFO);
-		_inst_name=instance_create_depth(140,124,0,text_typer);
-		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,Lang_GetString("ui.save.name.empty"));
-		_inst_lv=instance_create_depth(308,124,0,text_typer);
-		_inst_lv.text=_prefix+"LV "+string(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.LV));
-		_inst_time=instance_create_depth(452,124,0,text_typer);
-		var time=Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.TIME);
-		var minute=time div 60;
-		var second=time mod 60;
-		_inst_time.text=_prefix+string(minute)+":"+(second<10 ? "0" : "")+string(second);
-		_inst_room=instance_create_depth(140,160,0,text_typer);
-		_inst_room.text=_prefix+Player_GetRoomName(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.ROOM));
-		_inst_continue=instance_create_depth(170,210,0,text_typer);
-		_inst_continue.text=_prefix+Lang_GetString("menu.continue");
-		_inst_continue.override_color_text_enabled=true;
-		_inst_reset=instance_create_depth(390,210,0,text_typer);
-		_inst_reset.text=_prefix+Lang_GetString("menu.reset");
-		_inst_reset.override_color_text_enabled=true;
-		_inst_settings=instance_create_depth(264,250,0,text_typer);
-		_inst_settings.text=_prefix+Lang_GetString("menu.settings");
-		_inst_settings.override_color_text_enabled=true;
-		event_user(2);
-		
+	_inst_begin=instance_create_depth(170,120,0,text_typer);
+	_inst_begin.text=_prefix+"Begin Battle";
+	_inst_settings=instance_create_depth(170,150,0,text_typer);
+	_inst_settings.text=_prefix+"Settings(Broken)";
+	_inst_changeurname=instance_create_depth(170,180,0,text_typer);
+	_inst_changeurname.text=_prefix+"Change Name";
+	_inst_hardmode=instance_create_depth(170,210,0,text_typer);
+	_inst_hardmode.text=_prefix+"Hardmode:Off";
+	_inst_return=instance_create_depth(170,270,0,text_typer);
+	_inst_return.text=_prefix+"Return";
+	with(text_typer){
+		event_user(15);
 	}
+	event_user(2);
 }else{
 	if(instance_exists(_inst_instruction)){
 		instance_destroy(_inst_instruction);
@@ -57,23 +32,8 @@ if(_menu==0){
 	if(instance_exists(_inst_hardmode)){
 		instance_destroy(_inst_hardmode);
 	}
-	if(instance_exists(_inst_name)){
-		instance_destroy(_inst_name);
-	}
-	if(instance_exists(_inst_lv)){
-		instance_destroy(_inst_lv);
-	}
-	if(instance_exists(_inst_time)){
-		instance_destroy(_inst_time);
-	}
-	if(instance_exists(_inst_room)){
-		instance_destroy(_inst_room);
-	}
-	if(instance_exists(_inst_continue)){
-		instance_destroy(_inst_continue);
-	}
-	if(instance_exists(_inst_reset)){
-		instance_destroy(_inst_reset);
+	if(instance_exists(_inst_return)){
+		instance_destroy(_inst_return);
 	}
 }
 /*
@@ -167,10 +127,12 @@ if(_menu==5){
 		_inst_phase3.text=_prefix+"Phase 3";
 		_inst_phase4=instance_create_depth(170,210,0,text_typer);
 		_inst_phase4.text=_prefix+"Phase 4(idk how &many phase there are)";
+		_inst_hell=instance_create_depth(170,280,0,text_typer);
+		_inst_hell.text=_prefix+"Deadly Fight";
 		with(text_typer){
 			event_user(15);
 		}
-		event_user(2);
+		event_user(6);
 	
 }else{
 	if(instance_exists(_inst_phase1)){
@@ -185,7 +147,9 @@ if(_menu==5){
 	if(instance_exists(_inst_phase4)){
 		instance_destroy(_inst_phase4);
 	}
-	
+	if(instance_exists(_inst_hell)){
+		instance_destroy(_inst_hell);
+	}
 }
 
 if(_menu==1){

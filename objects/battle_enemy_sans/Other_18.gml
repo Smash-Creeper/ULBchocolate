@@ -9,7 +9,8 @@ if(phase=1){
 }else if(phase=2){
 	nonfightatk = battle_turn_gb_spam_2
 }
-
+with (battle_bullet_menubone)
+	terminate = 1
 //Say something
 if(Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())==_enemy_slot){
 	switch(Battle_GetMenuChoiceButton()){
@@ -20,7 +21,7 @@ var inst=instance_create_depth(x+100,y-150,0,battle_dialog_enemy);
 if(global.hardmode=false){
 if(phase=1){
 if(turn=0){
-inst.text="{font 3}{face_link 1}{face_emotion 1}Kid...{pause}{face_link 1}{face_emotion 2}Why did you &F*ck up the timeline{speed 8}&. . . &{speed 2}again?";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 1}Kid...{pause}{face_link 1}{face_emotion 2}Why did you &F*ck up the timeline{speed 8}&. . . &{speed 2}again?";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_intro);
 }else if(turn=1){
@@ -52,13 +53,13 @@ inst.text="N.";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_special);
 }else if(turn=8){
-inst.text="{font 3}{face_link 1}{face_emotion 1}Ok maybe u sad&so i spare you now.";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 1}Ok maybe u sad&so i spare you now.";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_empty);
 audio_stop_sound(BGM_LOM_Meg)
 }else if(turn=9){
 	if(Battle_GetMenuFightDamage()>=0){
-inst.text="{font 3}{face_link 1}{face_emotion 10}Ok you mean now &we phase 2.";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 10}Ok you mean now &we phase 2.";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_empty);
 	}else{
@@ -67,15 +68,39 @@ instance_create_depth(0,0,0,battle_turn_empty);
 }
 }else if(phase=2){
 	if(turn=10){
-inst.text="{font 3}{face_link 1}{face_emotion 12}Angy >:(";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Angy >:(";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_phase2_1);
+//instance_create_depth(0,0,0,battle_turn_phase2_1);
+instance_create_depth(0,0,0,battle_turn_phase2_hell);
 }else if(turn=11){
-inst.text="{font 3}{face_link 1}{face_emotion 12}It means Fack you. >:(";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}It means Fack you. >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_12);
+}else if(turn=12){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Meany >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_phase2_3);
+}else if(turn=13){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Death >:(";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_empty);
+}else if(turn=14){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Rehash >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_phase2_rotat_e);
+menubone_state = 1
+}else if(turn=15){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Rehash >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_empty);
+menubone_state = 2
+}else if(turn=16){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Rehash >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_phase2_6);
+menubone_state = 3
 }else if(turn=9){
-inst.text="{font 3}{face_link 1}{face_emotion 12}Ok you mean now &we phase 2.";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Ok you mean now &we phase 2.";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_empty);
 }
@@ -83,7 +108,7 @@ instance_create_depth(0,0,0,battle_turn_empty);
 }else if(global.hardmode=true){
 if(phase=1){
 if(turn=0){
-inst.text="{font 3}{face_link 1}{face_emotion 0}Kid...{pause}{face_link 1}{face_emotion 0}Why did you &F*ck up the timeline{speed 8}&. . . &{speed 2}again?";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 0}Kid...{pause}{face_link 1}{face_emotion 0}Why did you &F*ck up the timeline{speed 8}&. . . &{speed 2}again?";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_intro_hardmode);
 }else if(turn=1){
@@ -115,32 +140,55 @@ inst.text="N.";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_special);
 }else if(turn=8){
-inst.text="{font 3}{face_link 1}{face_emotion 1}Ok maybe u sad&so i spare you now.";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 1}Ok maybe u sad&so i spare you now.";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_empty);
+instance_create_depth(0,0,0,battle_turn_trollbuttmove);
 audio_stop_sound(BGM_LOM_Meg)
 }else if(turn=9){
 	if(Battle_GetMenuFightDamage()>=0){
-inst.text="{font 3}{face_link 1}{face_emotion 10}Ok you mean now &we phase 2.";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 10}Ok you mean now &we phase 2.";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_empty);
+instance_create_depth(0,0,0,battle_turn_trollbuttmove);
 	}else{
 		instance_create_depth(0,0,0,battle_turn_empty);
 	}
 }
 }else if(phase=2){
 	if(turn=10){
-inst.text="{font 3}{face_link 1}{face_emotion 12}Angy >:(";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Angy >:(";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_phase2_1);
 }else if(turn=11){
-inst.text="{font 3}{face_link 1}{face_emotion 12}It means Fack you. >:(";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}It means Fack you. >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_12);
+}else if(turn=12){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Meany >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_phase2_3);
+}else if(turn=13){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Death >:(";
 inst.template=0;
 instance_create_depth(0,0,0,battle_turn_empty);
+}else if(turn=14){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Rehash >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_phase2_rotat_e);
+menubone_state = 1
+}else if(turn=15){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Rehash >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_empty);
+menubone_state = 1
+}else if(turn=16){
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Rehash >:(";
+inst.template=0;
+instance_create_depth(0,0,0,battle_turn_phase2_6);
+menubone_state = 1
 }else if(turn=9){
-inst.text="{font 3}{face_link 1}{face_emotion 12}Ok you mean now &we phase 2.";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 12}Ok you mean now &we phase 2.";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_empty);
+instance_create_depth(0,0,0,battle_turn_trollbuttmove);
 }
 }
 }

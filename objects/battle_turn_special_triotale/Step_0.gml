@@ -26,6 +26,8 @@ if (start == 1)
 		Battle_SetSoul(battle_soul_blue)
 battle_soul.dir=DIR.LEFT
 battle_soul.impact=true
+face_battle_sans_slammer.arm_i=0;
+face_battle_sans_slammer.movearm=DIR.LEFT;
 
 	}
 	
@@ -69,7 +71,8 @@ Anim_Create(battle_bullet_bone,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,
 	
 	Anim_Create(battle_board,"right",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,battle_board.right,move,timep)
 	//Anim_Create(battle_board,"left",ANIM_TWEEN.LINEAR,ANIM_EASE.IN,battle_board.left,move,timep)
-	
+	face_battle_sans_slammer.arm_i=0;
+	face_battle_sans_slammer.movearm=-1;
 	
 
 	}

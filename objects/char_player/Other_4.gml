@@ -21,3 +21,4 @@ if(warp_dir!=-1){
 
 Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_LANDMARK,-1);
 Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,-1);
+image_blend = c_white

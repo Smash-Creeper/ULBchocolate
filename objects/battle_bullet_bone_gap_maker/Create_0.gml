@@ -9,6 +9,8 @@ v=2
 way=h
 length_t=0
 length_b=0
+random_l[0]=0
+random_l[1]=0
 current_length_t=length_t
 current_length_b=length_b
 angle_t=-90
@@ -49,5 +51,6 @@ proc_t=0;
 proc_b=0;
 
 toggle=0
+rng=0
 alarm[0]=start_delay
 alarm[1]=change_frequancy

@@ -1,7 +1,8 @@
-var inst = instance_create_depth(0,0,2,asgore_thinggy_send)
+var inst = instance_create_depth(0,0,2,asgore_gradient)
 inst.color_enabled=false
 inst.up=false
 inst.down=true
+inst.particle=spr_asgore_particle
 inst.red=96
 inst.green=230
 inst.blue=250

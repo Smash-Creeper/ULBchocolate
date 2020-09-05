@@ -1,5 +1,5 @@
 "item.eat"								"* You ate the {insert ITEM}."
-"item.equip"							"* You equiped the {insert ITEM}."
+"item.equip"							"* You equipped the {insert ITEM}."
 "item.heal.part"						"* You recovered {insert HP} HP!"
 "item.heal.all"							"* Your HP was maxed out."
 "item.drop.0"							"* The {insert ITEM} was&  thrown away."

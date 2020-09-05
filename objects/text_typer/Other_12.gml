@@ -572,7 +572,7 @@ switch(cmd[|0]){
 	case "heal":
 		if(is_real(cmd[|1])){
 			var h = cmd[|1];
-			Player_Heal(h)
+			Player_Heal(h,false)
 		}
 		break;
 		

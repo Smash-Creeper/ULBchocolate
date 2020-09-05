@@ -1,0 +1,11 @@
+depth=DEPTH_BATTLE.BULLET_OUTSIDE_HIGH;
+siner = 0
+type = 0
+spot = 0
+_idealx[0] = 0
+_idealx[1] = 10
+event = 1
+active = false
+_speed = -8
+alarm[0] = 1
+terminate = 0

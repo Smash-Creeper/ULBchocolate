@@ -9,9 +9,16 @@ if(dir==DIR.DOWN){
 }else if(dir==DIR.RIGHT){
 	image_angle=90;
 }
-	
+
 //移动
 if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
+	if(y >= 500)
+	{
+		Player_Hurt(15);
+		Battle_CallSoulEventHurt();
+		y = 490
+		move = -6
+	}
 	var SPD=Player_GetSpdTotal()
 	var SPD=(Input_IsHeld(INPUT.CANCEL) ? SPD/2 : SPD);
 	repeat(SPD*10){

@@ -23,5 +23,13 @@ if(_enabled){
 	var SY=SH/480;
 	var SF=min(SX,SY);
 	display_set_gui_maximize(SF,SF,(SW-640*SF)/2,(SH-480*SF)/2);
-	draw_surface_ext(application_surface,(SW-640*SF)/2,(SH-480*SF)/2,SF,SF,0,c_white,1);
+	if global.glitchfx == 1 then
+	{
+		gpu_set_blendmode(bm_add);
+		draw_surface_ext(application_surface,(SW-640*SF)/2+(2*random_range(-global.glitchtimer,global.glitchtimer)),(SH-480*SF)/2+(2*random_range(-global.glitchtimer,global.glitchtimer)),SF,SF,0,c_red,1);
+		draw_surface_ext(application_surface,(SW-640*SF)/2+(2*random_range(-global.glitchtimer,global.glitchtimer)),(SH-480*SF)/2+(2*random_range(-global.glitchtimer,global.glitchtimer)),SF,SF,0,c_lime,1);
+		draw_surface_ext(application_surface,(SW-640*SF)/2+(2*random_range(-global.glitchtimer,global.glitchtimer)),(SH-480*SF)/2+(2*random_range(-global.glitchtimer,global.glitchtimer)),SF,SF,0,c_blue,1);
+		gpu_set_blendmode(bm_normal);
+	}else
+		draw_surface_ext(application_surface,(SW-640*SF)/2,(SH-480*SF)/2,SF,SF,0,c_white,1);
 }
