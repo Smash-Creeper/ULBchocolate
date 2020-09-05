@@ -3,6 +3,8 @@
 
 // Inherit the parent event
 event_inherited();
+
+/*
 var disx=point_distance(x,0,xprevious,0)
 var disy=point_distance(0,y,0,yprevious)
 if(x<disx){

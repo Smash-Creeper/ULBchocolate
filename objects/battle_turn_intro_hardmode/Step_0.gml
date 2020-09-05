@@ -39,7 +39,7 @@ repeat(num){
 	inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.left+9,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
 	inst.dir=-90;
 	inst.length=0;
-	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep,delay*proc);
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep);
 
 
 	proc+=1;
@@ -386,6 +386,30 @@ inst.time_release_delay=10;
     if (time == 60*10)
     {
 
+	var proc=0;
+var num=22;
+repeat(num){
+	var space_x=10;
+	var length=70;
+	var timep=10;
+	var delay=1;
+	var space_y=8;
+	
+	var inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.left+9,battle_board.y+battle_board.down+space_y,0,battle_bullet_bone);
+	inst.dir=DIR.UP;
+	inst.length=0;
+	inst.type=1;
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep);
+
+	
+/*	inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.left+9,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=-90;
+	inst.length=0;
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep,delay*proc);
+*/
+
+	proc+=1;
+	}	
 	
 	var inst=instance_create_depth(0,10,0,battle_bullet_gb);
 inst.x_target=battle_board.x-battle_board.left-50-inst.sprite_width/2;
@@ -474,6 +498,34 @@ inst.time_release_delay=10;
 	}
 	
 	if(time == 60*13){
+		
+	/*	
+	var proc=0;
+var num=22;
+repeat(num){
+	var space_x=10;
+	var length=70;
+	var timep=20;
+	var delay=1;
+	var space_y=8;
+	
+	var inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.left+9,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=DIR.DOWN;
+	inst.length=0;
+	inst.type=1;
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep);
+
+	
+/*	inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.left+9,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=-90;
+	inst.length=0;
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep,delay*proc);
+*/
+/*
+	proc+=1;
+	}	
+*/		
+		
 			var inst=instance_create_depth(0,10,0,battle_bullet_gb);
 inst.x_target=battle_board.x-battle_board.left-150;
 inst.y_target=battle_board.y
@@ -520,6 +572,34 @@ inst.time_release_delay=10;
 	}
 	
 	if(time == 60*12){
+		
+					var proc=0;
+var num=22;
+repeat(num){
+	var space_x=10;
+	var length=70;
+	var timep=20;
+	var delay=1;
+	var space_y=8;
+	
+	var inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.right-9,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=DIR.LEFT;
+	inst.length=0;
+	inst.type=1;
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep);
+
+	
+/*	inst=instance_create_depth(battle_board.x-space_x/2-proc*space_x+battle_board.left+9,battle_board.y-battle_board.up-space_y,0,battle_bullet_bone);
+	inst.dir=-90;
+	inst.length=0;
+	Anim_Create(inst,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,0,length,timep,delay*proc);
+*/
+
+	proc+=1;
+	}	
+		
+		
+		
 			var inst=instance_create_depth(0,10,0,battle_bullet_gb);
 inst.x_target=battle_board.x-battle_board.left-100;
 inst.y_target=battle_board.y+inst.sprite_height/3;

@@ -5,33 +5,13 @@
     "name": "battle_soul_orangeUS_afterimage",
     "eventList": [
         {
-            "id": "77457912-fb9c-40a6-8549-8831ce6d5d66",
+            "id": "d109d122-b017-421c-9f3f-264cccc06335",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "d98ad2f0-628e-4187-9df1-e323b04310d3"
-        },
-        {
-            "id": "bd8ddda6-764e-43d5-b4cf-df31e2a23d7d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "d98ad2f0-628e-4187-9df1-e323b04310d3"
-        },
-        {
-            "id": "4af9109b-9522-439b-8521-b51a72d82958",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
+            "eventtype": 3,
             "m_owner": "d98ad2f0-628e-4187-9df1-e323b04310d3"
         }
     ],

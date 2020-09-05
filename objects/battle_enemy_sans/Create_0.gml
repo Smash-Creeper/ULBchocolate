@@ -44,6 +44,6 @@ BGM_Play(0,bgm_sans_phase_1,true,0.00,150.49)
 	
 	var a = audio_play_sound(BGM_LOM_Meg,-99,true)
 	
-	audio_sound_pitch(a,0.25)
+	//audio_sound_pitch(a,0.25)
 }
 }

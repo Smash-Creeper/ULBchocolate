@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "02571605-f1f3-44c9-8de6-8491ea9a24e1",
+            "Value": {
+                "id": "ae6a8117-77cf-45bd-8c0d-95cebab57c6d",
+                "resourcePath": "objects\\battle_bullet_bone_2\\battle_bullet_bone_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02685f4b-1067-4b89-8b6c-a6bc037d5cd0",
             "Value": {
                 "id": "a23855bb-c700-4c03-b088-b1d523138d4d",
@@ -1103,6 +1111,14 @@
             }
         },
         {
+            "Key": "291251d8-1a8c-428d-b207-be01151524c9",
+            "Value": {
+                "id": "857303b5-e4fb-48c8-8265-c973ae7080bf",
+                "resourcePath": "objects\\demo_screen\\demo_screen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2927840b-2dfe-4d09-baff-c3ae189db191",
             "Value": {
                 "id": "01d2b873-7a29-4359-af78-5a632977eb23",
@@ -1420,6 +1436,14 @@
                 "id": "54f584d1-5292-4683-90ee-8b66a91580e8",
                 "resourcePath": "sounds\\bgm_placeholder_song\\bgm_placeholder_song.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "34f90236-6529-4869-92de-573642328a90",
+            "Value": {
+                "id": "2587824f-71d9-4cca-9406-9d7f050ad997",
+                "resourcePath": "scripts\\Demomode_toggle\\Demomode_toggle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3295,6 +3319,14 @@
             }
         },
         {
+            "Key": "7d1436fd-6ca1-4f65-9ad7-5b3c8c126e71",
+            "Value": {
+                "id": "7b9a062d-351b-4927-918e-f28a865f8b3b",
+                "resourcePath": "sprites\\spr_demoend_screen_phase\\spr_demoend_screen_phase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7d9360b9-2e52-439c-8139-1c5d3acc13c4",
             "Value": {
                 "id": "72b422a0-508d-41d0-a794-21a149bc6b94",
@@ -3700,6 +3732,14 @@
                 "id": "4acaf49e-f1ed-4070-a8cd-009573836185",
                 "resourcePath": "objects\\face_battle_sans_body\\face_battle_sans_body.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b403db5-9061-41e1-8701-7ee98847b892",
+            "Value": {
+                "id": "065a07dc-a66f-42f1-93b1-b9c504701b5d",
+                "resourcePath": "scripts\\Hardmode_toggle\\Hardmode_toggle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5207,6 +5247,14 @@
             }
         },
         {
+            "Key": "c65c4cd2-2080-4cc8-8e47-baa7fb855b6c",
+            "Value": {
+                "id": "b0afed7e-403c-4a73-8731-3b6a4afc9754",
+                "resourcePath": "sprites\\spr_demoend_screen\\spr_demoend_screen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6c5b731-f7c8-4d30-9a30-ebe2d1d551ed",
             "Value": {
                 "id": "c602128a-bf0d-4e93-afde-86bf1f95962d",
@@ -5543,6 +5591,14 @@
             }
         },
         {
+            "Key": "d2860232-e10c-47f2-beeb-de6b21f0f69d",
+            "Value": {
+                "id": "1f502eeb-e4eb-4d77-83fc-93a19248fed7",
+                "resourcePath": "rooms\\room_demoend\\room_demoend.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d2ba8f83-ccac-4363-a7dd-276f220cac34",
             "Value": {
                 "id": "c65f1f1f-0046-4f10-b2eb-834c1e605edf",
@@ -5676,6 +5732,14 @@
                 "id": "26e1b8da-01f2-4d2f-ad8c-c6d6fe4b03aa",
                 "resourcePath": "views\\d6ed9e7f-fa2f-4b6a-bd6e-b9c3486ac3ba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d71f43a9-bafe-43f9-9f25-6bc1b893e2a8",
+            "Value": {
+                "id": "8dbdf1b1-4540-4b58-9c03-148232191304",
+                "resourcePath": "objects\\battle_turn_12\\battle_turn_12.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7086,7 +7150,9 @@
         "6920e60c-4be4-4e33-b0f9-7194b27af97f",
         "1fdda074-27ec-4ddf-8f59-a3e859c65b00",
         "249f9ba5-3dea-499e-a1a9-090540e129f3",
-        "0dcead03-b69a-4469-bcf1-37ccee1c0a6f"
+        "0dcead03-b69a-4469-bcf1-37ccee1c0a6f",
+        "8b403db5-9061-41e1-8701-7ee98847b892",
+        "34f90236-6529-4869-92de-573642328a90"
     ],
     "tutorial": ""
 }

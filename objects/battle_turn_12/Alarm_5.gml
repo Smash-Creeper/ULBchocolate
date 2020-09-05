@@ -1,0 +1,12 @@
+	var inst=instance_create_depth(battle_board.x,0,0,battle_bullet_gb);
+inst.x_target=battle_board.x;
+inst.y_target=battle_board.y-battle_board.up-50;
+inst.angle_start=irandom_range(0, 359);
+inst.angle_target=DIR.DOWN;
+inst.type=0;
+inst.scale_y=1;
+inst.scale_x=2;
+inst.time_beam_end_delay=21;
+inst.time_release_delay=10;
+inst.mute=true;
+alarm[5]=21

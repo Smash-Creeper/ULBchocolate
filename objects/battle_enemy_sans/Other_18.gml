@@ -73,7 +73,7 @@ instance_create_depth(0,0,0,battle_turn_phase2_1);
 }else if(turn=11){
 inst.text="{font 3}{face_link 1}{face_emotion 12}It means Fack you. >:(";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_empty);
+instance_create_depth(0,0,0,battle_turn_12);
 }else if(turn=9){
 inst.text="{font 3}{face_link 1}{face_emotion 12}Ok you mean now &we phase 2.";
 inst.template=0;
@@ -136,7 +136,7 @@ instance_create_depth(0,0,0,battle_turn_phase2_1);
 }else if(turn=11){
 inst.text="{font 3}{face_link 1}{face_emotion 12}It means Fack you. >:(";
 inst.template=0;
-instance_create_depth(0,0,0,battle_turn_empty);
+instance_create_depth(0,0,0,battle_turn_12);
 }else if(turn=9){
 inst.text="{font 3}{face_link 1}{face_emotion 12}Ok you mean now &we phase 2.";
 inst.template=0;

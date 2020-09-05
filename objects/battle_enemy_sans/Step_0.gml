@@ -1,15 +1,30 @@
+if(global.harddemo=true){
+	if(turn=1){
+		room_goto(room_demoend)
+	}
+}
+
+if(global.phase1demo=true){
+	if(turn>=9){
+		if(Battle_GetState()=BATTLE_STATE.TURN_PREPARATION){
+		room_goto(room_demoend)
+		}
+	}
+}
+
+
 if(infhp=true){
 	Player_SetHp(20)
 	Player_Heal(999)
 	audio_stop_sound(snd_hurt)
 }
-
+/*
 if(funni=true){
 	Player_SetHp(fps)
 	Player_SetHpMax(fps)
 	
 }
-
+*/
 /*
 face_battle_sans.x=x//previous
 face_battle_sans.y=y-116

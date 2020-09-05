@@ -1,5 +1,11 @@
 global.hardmode=false
 
+global.harddemo=false
+
+global.deathcounter=0
+
+global.phase1demo=false
+
 Anim_Init();
 
 Console_Init();
