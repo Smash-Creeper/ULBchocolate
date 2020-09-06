@@ -1,57 +1,73 @@
-/// @desc This object handles the UNDERTALE save loader thing I guess.
-file = environment_get_variable("LOCALAPPDATA")+"/UNDERTALE/file0"
-fileid = file_text_open_read(file)
-charname = file_text_read_string(fileid)
-file_text_readln(fileid)
-lv = file_text_read_real(fileid)
-file_text_readln(fileid)
-maxhp = file_text_read_real(fileid)
-file_text_readln(fileid)
-file_text_readln(fileid)
-at = file_text_read_real(fileid)
-file_text_readln(fileid)
-wstrength = file_text_read_real(fileid)
-file_text_readln(fileid)
-df = file_text_read_real(fileid)
-file_text_readln(fileid)
-adef = file_text_read_real(fileid)
-file_text_readln(fileid)
-sp = file_text_read_real(fileid)
-file_text_readln(fileid)
-xp = file_text_read_real(fileid)
-file_text_readln(fileid)
-gold = file_text_read_real(fileid)
-file_text_readln(fileid)
-kills = file_text_read_real(fileid)
-file_text_readln(fileid)
-for (i = 0; i < 8; i += 1)
+/// @desc This object handles the UNDERTALE save loader thing I guess
+try
 {
-    _item[i] = file_text_read_real(fileid)
-    file_text_readln(fileid)
-    _phone[i] = file_text_read_real(fileid)
-    file_text_readln(fileid)
-}
-weapon = file_text_read_real(fileid)
-file_text_readln(fileid)
-armor = file_text_read_real(fileid)
-file_text_readln(fileid)
-for (i = 0; i < 512; i += 1)
+	file = environment_get_variable("LOCALAPPDATA")+"/UNDERTALE/file0"
+	fileid = file_text_open_read(file)
+	charname = file_text_read_string(fileid)
+	file_text_readln(fileid)
+	lv = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	maxhp = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	file_text_readln(fileid)
+	at = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	wstrength = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	df = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	adef = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	sp = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	xp = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	gold = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	kills = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	for (i = 0; i < 8; i += 1)
+	{
+	    _item[i] = file_text_read_real(fileid)
+	    file_text_readln(fileid)
+	    _phone[i] = file_text_read_real(fileid)
+	    file_text_readln(fileid)
+	}
+	weapon = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	armor = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	for (i = 0; i < 512; i += 1)
+	{
+	    flag[i] = file_text_read_real(fileid)
+	    file_text_readln(fileid)
+	}
+	file_text_readln(fileid)
+	for (i = 0; i < 3; i += 1)
+	{
+	    menuchoice[i] = file_text_read_real(fileid)
+	    file_text_readln(fileid)
+	}
+	flag[94] = 0
+	file_text_readln(fileid)
+	file_text_readln(fileid)
+	time = file_text_read_real(fileid)
+	file_text_readln(fileid)
+	file_text_close(fileid)
+} catch	(e)
 {
-    flag[i] = file_text_read_real(fileid)
-    file_text_readln(fileid)
+	charname = "CHARA"
+	lv = 3
+	xp = 30
+	maxhp = 28
+	at = 14
+	df = 10
+	sp = 4
+	kills = 15
+	_item = [11, 1, 1, 0, 0, 0, 0, 0]
+	flag[512] = 0
 }
-file_text_readln(fileid)
-for (i = 0; i < 3; i += 1)
-{
-    menuchoice[i] = file_text_read_real(fileid)
-    file_text_readln(fileid)
-}
-flag[94] = 0
-file_text_readln(fileid)
-file_text_readln(fileid)
-time = file_text_read_real(fileid)
-file_text_readln(fileid)
-file_text_close(fileid)
+
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.NAME,charname);
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.LV,lv);
 Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.EXP,xp);
