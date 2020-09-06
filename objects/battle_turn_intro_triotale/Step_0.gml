@@ -7,7 +7,8 @@ Battle_SetSoul(battle_soul_orangeUS_grav);
 battle_soul.move=10;
 battle_soul.dir=DIR.UP;
 battle_soul.impact=true;
-
+face_battle_sans_slammer.arm_i=0;
+face_battle_sans_slammer.movearm=DIR.UP;
 
 var proc=0;
 var num=22;
@@ -69,7 +70,8 @@ Battle_SetSoul(battle_soul_orangeUS_grav);
 battle_soul.move=10;
 battle_soul.dir=DIR.LEFT;
 battle_soul.impact=true;
-
+face_battle_sans_slammer.arm_i=0;
+face_battle_sans_slammer.movearm=DIR.LEFT;
 
 var num=12;
 var proc=0;

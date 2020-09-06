@@ -1,8 +1,12 @@
 {
-    "id": "34f90236-6529-4869-92de-573642328a90",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Demomode_toggle",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Demomode_toggle",
+  "tags": [],
+  "resourceType": "GMScript",
 }

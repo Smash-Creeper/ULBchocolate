@@ -7,3 +7,5 @@ audio_play_sound(snd_logo,0,false);
 Fader_Fade(-1, 0, 0);
 
 BGM_Stop(0);
+scale = 2
+Anim_Create(self,"scale",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,scale,-1,45)

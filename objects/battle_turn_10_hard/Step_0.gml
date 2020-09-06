@@ -36,6 +36,8 @@ Anim_Create(inst,"length",ANIM_TWEEN.SINE,ANIM_EASE.OUT,inst.length,64*2+30,20)
 battle_soul.move=10;
 battle_soul.dir=DIR.UP;
 battle_soul.impact=true;
+face_battle_sans_slammer.arm_i=0;
+face_battle_sans_slammer.movearm=DIR.UP;
 alarm[5]=0
 alarm[6]=60
 	}

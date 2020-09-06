@@ -22,13 +22,13 @@ if(_menu==0){
 				event_user(2);
 			}
 	
-			if(_choice>3){
+			if(_choice>4){
 			_choice=0
 			}
 
 
 			if(_choice<0){
-			_choice=3
+			_choice=4
 			}
 		
 		if(Input_IsPressed(INPUT.DOWN)){
@@ -52,6 +52,9 @@ if(_menu==0){
 				event_user(0);
 			}else if(_choice==3){
 			_menu=6;
+				event_user(0);
+			}else if(_choice==4){
+				room_goto(room_menu)
 				event_user(0);
 			}
 		}
@@ -193,40 +196,46 @@ if(_menu==0){
 	
 			if(_choice==0){
 				//_choice=2;
+				secret=0;
 				event_user(6);
 			}
 			if(_choice==1){
 				//_choice=1;
+				secret=0;
 				event_user(6);
 			}
 			if(_choice==2){
 			//	_choice=1;
+				secret=0;
 				event_user(6);
 			}
 	
 			if(_choice==3){
 			//	_choice=1;
+				secret=0;
 				event_user(6);
 			}
-	
-			if(_choice>3){
-			_choice=0
+
+			if(_choice==4){
+			//	_choice=1;
+				secret=1;
+				event_user(6);
 			}
 
-
-			if(_choice<0){
-			_choice=3
-			}
-		
 		if(Input_IsPressed(INPUT.DOWN)){
 			_choice++
-			
+			if(_choice>3){
+				_choice=0
+			}
 		}else if(Input_IsPressed(INPUT.UP)){
 			_choice--
-			
+			if(_choice<0){
+				_choice=4
+			}
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice==0){
 				_menu=4
+				global.sansphase=1
 				event_user(0);
 			}else if(_choice==1){
 				_menu=4;
@@ -236,6 +245,9 @@ if(_menu==0){
 				_menu=4;
 				event_user(0);
 			}else if(_choice==3){
+				_menu=4;
+				event_user(0);
+			}else if(_choice==4){
 				_menu=4;
 				event_user(0);
 			}

@@ -1,92 +1,82 @@
 {
-    "id": "f561477d-d672-473c-9d6d-484ee0dffb9a",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "spr_battle_soul_blue",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 15,
-    "bbox_left": 0,
-    "bbox_right": 15,
-    "bbox_top": 0,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "de04ab3b-67ee-4823-8c61-920c19c3d855",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f561477d-d672-473c-9d6d-484ee0dffb9a",
-            "compositeImage": {
-                "id": "080c76db-9707-41cd-bda0-c4e4a0ac08ea",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "de04ab3b-67ee-4823-8c61-920c19c3d855",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "a7e63651-4bac-4a3c-a358-7ae7b6531118",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "de04ab3b-67ee-4823-8c61-920c19c3d855",
-                    "LayerId": "7b819529-a56a-4283-a8d8-2b8ea6654c5e"
-                }
-            ]
-        },
-        {
-            "id": "0b57af16-2dc0-4ba4-a85f-ce7b10517734",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "f561477d-d672-473c-9d6d-484ee0dffb9a",
-            "compositeImage": {
-                "id": "dbb270d5-19f0-457e-89f9-0c1166c4796d",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "0b57af16-2dc0-4ba4-a85f-ce7b10517734",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "be799363-c346-47d1-965b-3245c51a8675",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "0b57af16-2dc0-4ba4-a85f-ce7b10517734",
-                    "LayerId": "7b819529-a56a-4283-a8d8-2b8ea6654c5e"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 16,
-    "layers": [
-        {
-            "id": "7b819529-a56a-4283-a8d8-2b8ea6654c5e",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "f561477d-d672-473c-9d6d-484ee0dffb9a",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 15,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 15,
+  "bbox_top": 0,
+  "bbox_bottom": 15,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 16,
+  "height": 16,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"de04ab3b-67ee-4823-8c61-920c19c3d855","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"de04ab3b-67ee-4823-8c61-920c19c3d855","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"LayerId":{"name":"7b819529-a56a-4283-a8d8-2b8ea6654c5e","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_battle_soul_blue","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"resourceVersion":"1.0","name":"de04ab3b-67ee-4823-8c61-920c19c3d855","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0b57af16-2dc0-4ba4-a85f-ce7b10517734","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0b57af16-2dc0-4ba4-a85f-ce7b10517734","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"LayerId":{"name":"7b819529-a56a-4283-a8d8-2b8ea6654c5e","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_battle_soul_blue","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"resourceVersion":"1.0","name":"0b57af16-2dc0-4ba4-a85f-ce7b10517734","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"spr_battle_soul_blue","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 16,
-    "xorig": 8,
-    "yorig": 8
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"9a0a0232-9312-4979-93eb-05ecb05b0f16","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"de04ab3b-67ee-4823-8c61-920c19c3d855","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7345c202-6bf6-486a-ad8a-0fd7cb2d0771","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b57af16-2dc0-4ba4-a85f-ce7b10517734","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 8,
+    "yorigin": 8,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"spr_battle_soul_blue","path":"sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7b819529-a56a-4283-a8d8-2b8ea6654c5e","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spr_battle_soul_blue",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

@@ -46,7 +46,7 @@ switch(string_lower(_naming_name)){
 		valid=false;
 		break;
 	case "murian":
-		text="Glad you Condone this&{color `yellow`}S H I T";
+		text="Glad you condone this&{color `yellow`}S H I T";
 		//valid=false;
 		break;
 	case "mtt":

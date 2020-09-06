@@ -15,6 +15,7 @@ ds_map_add(_map_macro,"FONT.SANS",3);
 ds_map_add(_map_macro,"VOICE.NULL",-1);
 ds_map_add(_map_macro,"VOICE.DEFAULT",0);
 ds_map_add(_map_macro,"VOICE.TYPER",1);
+ds_map_add(_map_macro,"VOICE.SANS",2);
 
 _group_font[0,0]=Lang_GetFont(Lang_GetString("font.dialog.0"));
 _group_font_scale_x[0,0]=real(Lang_GetString("font.dialog.0.scale.x"));
@@ -59,5 +60,6 @@ _group_font_space_y[3]=real(Lang_GetString("font.battle.space.y"));
 
 _group_voice[0,0]=snd_text_voice_default;
 _group_voice[1,0]=snd_text_voice_typer;
+_group_voice[2,0]=snd_text_voice_sans;
 
 _group_face[0]=face;

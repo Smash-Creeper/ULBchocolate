@@ -21,4 +21,4 @@ up.length_b=0
 dw.length_t=0
 dw.length_b=65
 }
-alarm[4]=90
+alarm[4]=45

@@ -1,8 +1,12 @@
 {
-    "id": "c52e790d-cb14-45be-ac80-a06638b938a2",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_StopBoardTransforming",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Board",
+    "path": "folders/Scripts/Battle/Board.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_StopBoardTransforming",
+  "tags": [],
+  "resourceType": "GMScript",
 }

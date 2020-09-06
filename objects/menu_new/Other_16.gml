@@ -12,3 +12,6 @@
 	_change_inst=_inst_phase4;
 	_change_color=(_choice==3 ? c_yellow : c_white);
 	event_user(1);
+	_change_inst=_inst_hell;
+	_change_color=(_choice==4 ? c_dkgray : c_black);
+	event_user(1);

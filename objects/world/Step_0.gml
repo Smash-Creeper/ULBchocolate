@@ -29,7 +29,9 @@ if(keyboard_check_pressed(192)){
 }
 
 if(keyboard_check_pressed(ord("H"))){
-	Player_Heal(9999)
+	if instance_exists(battle_ui)
+		battle_ui.karma=0
+	Player_Heal(9999,false)
 }
 
 Console_SetStatusText(0,"FPS: "+string(fps));
@@ -41,4 +43,12 @@ Console_Step();
 if(keyboard_check_pressed(vk_f4)&&!keyboard_check(vk_alt)&&!keyboard_check(vk_control)&&!keyboard_check(vk_shift)){
 	window_set_fullscreen(!window_get_fullscreen());
 	//display_set_gui_maximize();
+}
+
+if audio_group_is_loaded(audiogroup_mus)&&_started_game=0
+{
+	room_goto_next();
+	//room_goto(room_simple_battle)
+	//Encounter_Start(3);
+	_started_game = 1
 }

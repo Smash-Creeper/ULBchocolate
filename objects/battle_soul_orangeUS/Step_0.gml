@@ -25,9 +25,11 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			if(!Input_IsHeld(INPUT.LEFT)){
 				if(!Input_IsHeld(INPUT.RIGHT)){
 					if(!Input_IsHeld(INPUT.DOWN)){
-					//	if(SPD>0){
-			Player_Hurt(.1)
-			//			}
+						battle_ui.orange_not_moving = 1
+						if(battle_enemy_sans.soul_damage <= 0){
+							Player_Hurt(1)
+							battle_enemy_sans.soul_damage = 2
+						}
 					}
 				}
 			}

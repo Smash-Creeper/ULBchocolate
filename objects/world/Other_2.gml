@@ -61,6 +61,3 @@ Console_OutputLine(" ");
 Console_OutputLine("Hello there Gamer");
 
 //show_debug_overlay(true);
-
-room_goto_next();
-

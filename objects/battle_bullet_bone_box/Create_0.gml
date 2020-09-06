@@ -8,3 +8,4 @@ auto_destroy_dir=-1;
 no_bottom=false;
 time=-1;
 outside=false;
+innate_karma=2;

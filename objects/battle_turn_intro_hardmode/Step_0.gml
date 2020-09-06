@@ -14,6 +14,8 @@ Battle_SetSoul(battle_soul_blue);
 battle_soul.move=10;
 battle_soul.dir=DIR.DOWN;
 battle_soul.impact=true;
+face_battle_sans_slammer.arm_i=0;
+face_battle_sans_slammer.movearm=DIR.DOWN;
 
 
 
@@ -65,7 +67,8 @@ repeat(num){
 	Anim_Create(battle_bullet_bone,"length",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,battle_bullet_bone.length,-length,timep,proc);
 
 	Battle_SetSoul(battle_soul_orangeUS);
-
+	face_battle_sans_slammer.arm_i=0;
+	face_battle_sans_slammer.movearm=-1;
 
 	proc+=1;
 	}
@@ -647,7 +650,7 @@ inst.time_release_delay=10;
 	
 	if(time==60*15){
 		var inst=instance_create_depth(battle_enemy.x+100,battle_enemy.y-150,0,battle_dialog_enemy);
-inst.text="{font 3}{face_link 1}{face_emotion 3}*insert {face_emotion 5}egdey{face_emotion 3} dialog&here*";
+inst.text="{font 3}{voice 2}{face_link 1}{face_emotion 3}*insert {face_emotion 5}egdey{face_emotion 3} dialog&here*";
 inst.template=0;
 t_end=true
 }

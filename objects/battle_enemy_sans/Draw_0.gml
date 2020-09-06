@@ -3,6 +3,7 @@
 		draw_set_color(c_white);
 		draw_text(0,0,"   TURN  "+string(turn));
 		draw_text(0,40,"   DEATHS  "+string(global.deathcounter));
+		draw_text(0,80,"   MENUBONE  "+string(menubone_state));
 	//	draw_text(0,40,"   SprSet  "+string(spr));
 		var M = 20
 	}else{

@@ -3,6 +3,7 @@ visible=false;
 
 damage=0;
 color=c_red;
+bar_color=c_lime;
 display_time=60;
 bar_visible=true;
 bar_width=100;

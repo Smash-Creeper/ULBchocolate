@@ -1,5 +1,6 @@
 ///@desc Menu End
-
+with (battle_bullet_menubone)
+	terminate = 1
 switch(Battle_GetMenuChoiceButton()){
 	case BATTLE_MENU_CHOICE_BUTTON.FIGHT:
 		//Check: is enemy supposed to be dead?
@@ -9,14 +10,13 @@ switch(Battle_GetMenuChoiceButton()){
 				if(Battle_GetMenuFightDamage()>=0){
 				phase=2
 				global.sansphase=2
-				_hit=2
+				_hit=3
 				_hp=1
 				alarm[0]=1
-				audio_stop_all()
-				
-				song = audio_play_sound(BGM_LOM_Meg,-99,true)
+				BGM_Stop(0)
+				song = BGM_Play(0,BGM_LOM_Meg,true,-1,-1)
 
-alarm[1]=30;
+				alarm[1]=30;
 				
 				}
 			}else if(phase=2){
@@ -40,11 +40,11 @@ alarm[1]=30;
 	case BATTLE_MENU_CHOICE_BUTTON.ACT:
 		switch(Battle_GetMenuChoiceAction()){
 			case 0:
-				Dialog_Add("* sans - AT 1 DF 1&* Its sans ya facking turd& you already know this crap.");
+				Dialog_Add("* SANS - ATK 1 DEF 1&* The easiest enemy.{sleep 10}&* Of course you knew that.");
 				break;
 			case 1:
 
-				Dialog_Add("* You say 'Fortnite Bad'");
+				Dialog_Add("* You say 'Fortnite Bad'.");
 			
 				break;
 		}

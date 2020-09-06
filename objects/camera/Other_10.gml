@@ -7,6 +7,7 @@ scale_x=1;
 scale_y=1;
 angle=0;
 target=noone;
+_no_target=0;
 
 shake_x=0;
 shake_y=0;
