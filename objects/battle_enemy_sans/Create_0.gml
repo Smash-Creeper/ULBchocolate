@@ -3,6 +3,8 @@
 
 // Inherit the parent event
 event_inherited();
+Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.KR_ON,1)
+Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.DR_ON,0)
 slide=false
 _hit=2
 _spare = false

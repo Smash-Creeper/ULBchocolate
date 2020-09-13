@@ -1,5 +1,6 @@
 /// @desc This object handles the UNDERTALE save loader thing I guess.
 file = environment_get_variable("LOCALAPPDATA")+"/UNDERTALE/file0"
+if(file_exists(file)){
 fileid = file_text_open_read(file)
 charname = file_text_read_string(fileid)
 file_text_readln(fileid)
@@ -198,3 +199,9 @@ global.itemstyle_set = 1
 global.itemstyle = 0
 global.serious = 1
 instance_destroy()
+}else{
+	repeat(9){
+		Item_Add(item_badmemory)
+	}
+	instance_destroy()
+}

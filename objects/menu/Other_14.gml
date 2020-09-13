@@ -83,6 +83,11 @@ switch(string_lower(_naming_name)){
 		show_message("Fuck off and Fuck you");
         game_end()
         break;
+	case "zclown":
+	case "zerclo":
+		text="Big Brain Time";
+		zerclown=1
+        break;
 	case "frisk":
 	//case "hard":
 	case "a":

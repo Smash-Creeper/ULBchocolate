@@ -79,6 +79,12 @@ switch(string_lower(_naming_name)){
 		show_message("Fuck off and Fuck you");
         game_end()
         break;
+	case "zerclo":
+	case "zclown":
+		text="Fuck off";
+		show_message("Fuck off and Fuck you");
+        game_end()
+        break;
 	case "frisk":
 		text="Warning this will make&your life {color `red`}&Hell.";
 		global.hardmode=true

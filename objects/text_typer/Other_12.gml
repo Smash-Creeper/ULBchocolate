@@ -576,4 +576,11 @@ switch(cmd[|0]){
 		}
 		break;
 		
+	case "encounter":
+		if(is_real(cmd[|1])){
+			var e = cmd[|1];
+			Encounter_Start(e)
+		}
+		break;
+		
 }

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_battle_ui_kr","path":"sprites/spr_battle_ui_kr/spr_battle_ui_kr.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_battle_ui_kr",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

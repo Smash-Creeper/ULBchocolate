@@ -6,6 +6,9 @@ dir_locked=false;
 
 talking=false;
 
+texton=false
+text=""
+
 move_speed[DIR.UP]=2;
 move_speed[DIR.DOWN]=2;
 move_speed[DIR.LEFT]=2;
